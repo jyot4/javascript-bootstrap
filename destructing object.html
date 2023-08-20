@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         let a = [1,2,3[3,4,5,[10,12,23,{e:20,f:40,g:[4,5,6,{h:4,i:6}]}]]]
+        // console.log(a[3][3][3].g[3].i)
+
+
+        // let b = {fname:"priya",lname :"vyas",gender:"female",age:20}
+        // var {fname,lname,gender,age}= b
+        // console.log(b.gender)
+
+        // "use strict";
+
+        let b = { fname: "priya", lname: "vyas", gender: "female", age: 20 }
+        var { fname: username, lname, gender, age } = b
+        console.log(b.gender)
+        console.log(username)
+
+
+
+
+        let c = {
+            fname: "priya", lname: "vyas", gender: "female", age: 20,
+    city: { city: "makrana", state: "raj" }
+        }
+        
+        console.log(c.city.state)
+
+
+//when u use use Strict  in below the script tag  it strict the code and u can't use any thing without  declaring variable. and also ww can't 
+//define same variable
+
+ var a= 20;
+console.log(a)
+
+
+function sum (a,b,b){
+    console.log(a+b+b)
+}
+
+sum(10,50,100)
+
+
+
+    </script>
+
+</body>
+
+</html>

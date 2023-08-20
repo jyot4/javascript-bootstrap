@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var a =[1,2,3,4]
+        // var b = [5,6,7,8,9]
+        // var c = [...a,...b]
+        // console.log(c)
+        // var a = {fname:"priya",lname:"vyas",age:20,professional:"developer"}
+        // var b= {gender:"female",mad :100,hobbies:"stekch"}
+        // // var c = {fname:"ninu",lname:"vyas",age:23,professional:"banker"}
+
+        // var d = {...a,...b}
+        // console.log(d)
+
+// var f = "50"-"50";
+// console.log(f)
+
+//rest operator 
+
+// function uname (a,b,...c){
+//     console.log(a,b,...c)
+// }
+
+// uname("priya","sween","jyoti","sachin")
+
+// var num;
+// function number (...a){
+// for(let i = 0; i >a.length; i++);
+
+//  num += number[a]
+
+
+// }
+
+// number(2 ,3,4,5, 6,7)
+
+
+// function sum(...sumof){
+//     var totalnumber = 0;
+//     for(var a of sumof){
+//         totalnumber+= a;
+//     }
+//     console.log()
+// }
+// sum(1,2,2,3,4,5,5,6)
+// // desturction 
+//  var a = ["jyoti","vyas",22,"male","jaipur"]
+//  var [name,lastr,age,gender,city]=a;
+//  console.log(name)
+
+
+ var b = ["jyoti","vyas",22,"male","jaipur",["raj","draw"]]
+ var [name,lastr,age,gender,city,[state,hobby]]=b;
+ console.log(b[5][1])
+
+let a = [1,2,3[3,4,5,[10,12,23,{e:20,f:40,g:[4,5,6,{h:4,i:6}]}]]]
+console.log(a[3][3][3].g[3].i)
+
+    </script>
+</body>
+</html>

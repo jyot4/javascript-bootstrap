@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainheader nav.navbar.navbar-expand-lg {
+    background-color: #526d75 !important;
+}
+
+ .mainheader a.nav-link {
+    color: white;
+    border-radius: 20px;
+    border: 1px solid;
+    margin: 10px;
+    padding: 8px 20px !important;
+}
+
+.mainheader button.btn.btn-outline-success {
+    color: white;
+    background-color: #002461;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+
+.mainheader a.nav-link:hover{
+    color: white;
+    border-radius: 20px;
+    border: 1px solid;
+    margin: 10px;
+    background-color:#2664cc;
+    padding: 8px 20px !important;
+}
+
+
+.image{
+/* width: 100%; */
+height: 100vh;
+object-fit: cover;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    
+}

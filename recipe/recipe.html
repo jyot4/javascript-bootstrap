@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reciepe Ready In Minutes</title>
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        #wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #f8f8f8, #e0e0e0);
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #wrapper h1 {
+            margin-bottom: 20px;
+        }
+        #recipeList {
+            list-style-type: none;
+            margin-bottom: 20px;
+        }
+ 
+        #recipeList li {
+            cursor: pointer;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        #recipeList li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        #recipeReadyInMinutes {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #e74c3c;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .images {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .h3 {
+            font-size: 22px;
+            margin-top: 15px;
+            color: #333;
+        }
+
+        .para {
+            margin-top: 10px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+        <h1>Welcome to TasteTrail Bites ! </h1>
+        <ul id="recipeList"></ul>
+        <h2 id="recipeReadyInMinutes"></h2>
+        <img src="" class="images"/>
+        <h3 class="h3"></h3>
+        <p class="para"></p>
+    </div>
+    <script>
+        // javascript code goes here
+        const list = document.getElementById('recipeList');
+        const h2 = document.getElementById('recipeReadyInMinutes');
+        const paragraph = document.querySelector('.para')
+        const image = document.querySelector('.images')
+        const h3 = document.querySelector('.h3')
+
+
+        fetch("https://content.newtonschool.co/v1/pr/64996337e889f331d43f70ba/recipes")
+            .then(response => response.json())
+
+            .then(result => {
+                console.log(result)
+                recipes(result)
+            })
+
+
+
+
+
+        function recipes(result) {
+            for (let i = 0; i < result.length; i++) {
+                const liof = document.createElement("li")
+                liof.innerHTML = result[i].title
+                list.append(liof)
+
+                liof.onclick=()=>{
+                    h2.innerHTML = "ReadyInMinute" + result[i].readyInMinutes
+                    image.src =  result[i].image
+                    h3.innerHTML = "What's in your meal :-"
+                    paragraph.innerHTML =   result[i].ingredients
+
+                }
+
+                // list.onclick=()=>{
+                    
+                // }
+            }
+        }
+
+// console.log(i)
+
+//   const li = result.map((listofrecipe)=>{
+// liof.push(
+
+// )
+// })
+
+
+
+
+    </script>
+</body>
+
+</html>

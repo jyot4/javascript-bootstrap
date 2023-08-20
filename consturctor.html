@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //by  using constructor in fucntion user we will pass the property of the object
+         //the first word of the constructor will be in  captial letter
+
+
+         function User(first,last,gen,age,email,edu){
+            this.fname = first
+            this.lname = last
+            this.gender = gen
+            this.ages= age
+            this.mail= email
+            this.study= edu
+         }
+         let userr = new User("priya","vyas","female",23,"priya23@gmail.com","btech")
+         let users = new User("jyoti","vyas","female",23,"jyoti45@gmail.com","bba")
+         let data = new User("sachin","sain","male",22,"sachin6876@gmail.com","bsc")
+         let list = new User("riya","sain","female",34,"riya25653@gmail.com","bcom")
+         let people = new User("priya","vyas","female",23,"priya23@gmail.com","btech")
+
+         console.log(userr,users,data,list,people)
+
+
+
+
+        // 
+// //es6
+//         class emplyee{
+//             constructor()
+//                 console.log("heey")
+//             }
+//         }
+
+//         var a  = new emplyee()
+
+
+//         class hey{
+//             constructor(user,age){
+// this.user = d;
+// this.age = b;
+//             }
+//         }
+
+//         let c = new class("priya" ,22)
+
+    // class user{
+
+    //     constructor(n,a,g)
+    //     {
+    //         this.username=n;
+    //         this.age=a;
+    //         this.gender=g;
+    //     }
+
+    // }
+        
+    // var ob1=new user("priya", 22 ,"female")
+    // console.log(ob1)
+
+
+
+    // inheritence 
+
+// we can use the method of the other class by the help o inheritance 
+
+
+// class employee{
+//     constructor(){
+//         console.log("hello")
+//     }
+// }
+
+// class manager extends employee{
+
+// }
+
+// let manager1 = new manager()
+// console.log(manager1)
+
+
+class user{
+
+constructor(n,a,g)
+{
+    this.username=n;
+    this.age=a;
+    this.gender=g;
+}
+
+}
+
+class hello extends user{
+
+}
+
+let hello1 = new hello("priya", 22,"female")
+console.log(hello1)
+
+
+
+//super 
+//super keyword is used to called the constructor of its parent class to accesss the parent property and its method
+class employee{
+    constructor(u){
+        this.user = u;
+       
+    }
+}
+
+class newem extends employee{
+    constructor(p,a){
+        super(p)
+        this.age = a;
+    }
+}
+
+let pr = new newem("piya", 24)
+console.log(pr)
+    </script>
+</body>
+</html>

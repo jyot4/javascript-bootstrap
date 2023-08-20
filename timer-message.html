@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      #timer-message {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="timer-message"></div>
+
+    <script>
+    //  
+    const message = setTimeout((timer)=>{
+        document.getElementById("timer-message").innerText = "Initial message";
+      },1000)
+
+
+
+      const msg1 = setTimeout((timer1)=>{
+        document.getElementById("timer-message").innerText = "After 2 seconds";
+      },2000)
+
+      const msg2 = setTimeout((timer2)=>{
+        document.getElementById("timer-message").innerText = "After 5 seconds";
+      },5000)
+      
+    </script>
+  </body>
+</html>

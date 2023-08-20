@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+#container{
+width: 200px;
+height: 150px;
+border: 1px solid;
+}
+
+</style>
+<div id="container">
+    <h1>hello welcome to my class </h1>
+    <button onclick="change()" ondblclick="data()">submit</button>
+</div>
+
+   <script>
+
+// const contain = document.querySelector(".container")
+// const button = document.querySelector(".btn")
+
+
+//    button.addEventListener(onclick, change)
+
+// function change(){
+//     contain.style ="background:red";
+// }
+
+function change()
+{
+    var a=document.getElementById("container");
+    a.style="background:maroon";
+
+}
+function data()
+{
+    var a=document.getElementById("container");
+    a.style="background:green";
+    
+
+}
+
+   </script> 
+</body>
+</html>
