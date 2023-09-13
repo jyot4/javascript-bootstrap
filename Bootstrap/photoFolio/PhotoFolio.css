@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
 }
 .navbar{
     padding: 0 !important;
@@ -20,6 +21,7 @@
 }
 .myClass .container-fluid a{
     color:white;
+    font-size: 30px;
 }
 
 .myClass .navbar .nav-item .nav-link{
