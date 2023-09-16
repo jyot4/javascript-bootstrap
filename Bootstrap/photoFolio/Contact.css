@@ -65,3 +65,79 @@ p {
     color: rgb(226, 219, 204);
     margin-bottom: 30px;
 }
+
+.firstA {
+    padding: 10px 40px;
+    background-color: #27a776;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+
+.contact {
+    margin-top: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+::before {
+    color: #27a776;
+    font-size: 20px;
+}
+.contact h2 {
+    font-size: 23px;
+    color: gray;
+}
+
+.contact p {
+    font-size: 15px;
+}
+
+
+.form{
+    margin-top: 20px;
+}
+
+.form input{
+    width:100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    background-color: rgb(21, 21, 21);
+    color: gray;
+    border: none;
+
+}
+
+
+.FullForm input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    background-color: rgb(21, 21, 21);
+    color: gray;
+    border: none;
+}
+
+#text{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    background-color: rgb(21, 21, 21);
+    color: gray;
+    border: none;
+}
+
+
+.firstB{
+    padding: 10px 40px;
+    background-color: #27a776;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    
+
+}
