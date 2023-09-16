@@ -80,8 +80,82 @@ p {
 .columnss   .container  {
     /* background-color: gray; */
     color: white;
-    width:70%;
-    height: 300px;
-    background-color: gray;
+    width:100%;
+   
+  
     padding: 30px;
 }
+
+.first ,.second ,.third, .four  {
+    margin-top: 30px;
+    height: 250px;
+    background-color: rgb(49, 47, 47);
+    color: white;
+    padding: 50px;
+
+}
+
+.smallcontent1 {
+    position: relative;
+ }
+ .smallcontent1  .container h2 {
+    color: gray;
+    font-size: 15px; 
+    
+ }
+
+ .smallcontent1  .container p{
+    font-size: 50px;
+ }
+
+ .smallcontent1 .container hr {
+    position: absolute;
+    bottom:70px;
+    left:200px;
+    width: 120px;
+    height: 2px;
+    border: 1px solid #5bd9a9;
+    display: flex;
+    flex-direction: column;
+ }
+
+
+ .smallcontent {
+    position: relative;
+ }
+ .smallcontent  .container h2 {
+    color: gray;
+    font-size: 15px; 
+    
+ }
+
+ .smallcontent  .container p{
+    font-size: 50px;
+ }
+
+ .smallcontent .container hr {
+    position: absolute;
+    bottom:70px;
+    left:200px;
+    width: 120px;
+    height: 2px;
+    border: 1px solid #5bd9a9;
+    display: flex;
+    flex-direction: column;
+ }
+
+.section , .section1 , .section2{
+    border-bottom: 1px dashed ;
+    color: gray;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px ;
+}
+
+
+
+
+
+
+
