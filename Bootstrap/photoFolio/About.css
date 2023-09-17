@@ -148,11 +148,18 @@ h3{
     align-items: center;
 }
 
-.footer .footerContent {
-    font-size: 15px;
-   
-    
-    
+
+.footer p, h6 {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+
+.footer h6 a {
+    text-decoration: none;
+    color: #27a776;
 }
    
 .footer .footerContent a {

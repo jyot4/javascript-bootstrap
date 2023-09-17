@@ -138,11 +138,9 @@ p {
     color: white;
     border-radius: 5px;
     margin-bottom: 50px;
+
     
-
 }
-
-
 
 .footer{
     border-top: 1px solid;
@@ -153,14 +151,18 @@ p {
     align-items: center;
 }
 
-.footer .footerContent {
-    font-size: 15px;
-    
-}
-   
-.footer .footerContent a {
 
+.footer p, h6 {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+
+.footer h6 a {
     text-decoration: none;
     color: #27a776;
-
 }
+
+
