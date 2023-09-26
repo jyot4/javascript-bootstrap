@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.mainDiv{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(208, 187, 187);
+   
+}
+
+
+.mainDiv input  {
+    padding: 14px 40px ;
+    /* width: 400px; */
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: none;
+
+}
+
+
+.mainDiv button{
+    padding: 13px 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: darkslategray;
+    color: white;
+    font-size: 18px;
+}
+
+.mainDiv .paragraph{
+    max-width:400px ;
+     max-height: auto;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: darkslategray;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
