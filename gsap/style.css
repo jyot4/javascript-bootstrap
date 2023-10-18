@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+}
+
+#page , #page1 , #page2 , #page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+
+
+canvas{
+    max-width: 100vw;
+    max-height: 100vh;
+    z-index: 99;
+
+}
+
+
+#marquee {
+     position: relative;
+}
+#marquee  marquee{
+    font-size: 155px; 
+position: absolute;
+ top: 300px;
+}
+
+#marquee marquee span{
+    -webkit-text-stroke: 2px black;
+    color:transparent;
+}
